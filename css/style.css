@@ -1,0 +1,215 @@
+/* ===BASE STYLE=== */
+* {
+  box-sizing: border-box;
+  font-family: "Merriweather";
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  padding: 20px 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-size: 1.3rem;
+}
+
+p {
+  color: grey;
+  font-size: 1rem;
+}
+
+h2,
+p {
+  text-align: center;
+  padding: 5px;
+}
+
+form {
+  border: hidden;
+}
+/* ===FLEXBOX STYLE===*/
+.personal,
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.personal {
+  flex-direction: column;
+}
+
+.flexbox {
+  flex-direction: row;
+}
+
+/* Header */
+.header {
+  background-size: cover;
+  background-color: #3b5998;
+  padding: 10px;
+}
+/* Form */
+.about {
+  border-bottom: 10px grey double;
+  text-align: center;
+  margin: 15px 5px;
+  padding: 30px 10px;
+}
+
+.personal,
+.subscription {
+  border: hidden;
+  margin: 20px 5px;
+  padding-bottom: 30px;
+}
+
+.personal {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  border-bottom: 3px #dd2a7b dotted;
+}
+
+.subtitles {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-top: 40px;
+}
+
+label {
+  color: rgb(15, 15, 15);
+  padding: 20px 0;
+}
+
+label:first-child {
+  width: 100%;
+}
+
+input[placeholder] {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+input,
+select,
+textarea {
+  background-color: #f8f8ff;
+  border: 3px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #030303;
+  color: white;
+}
+
+textarea {
+  border-color: #feda77;
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+}
+
+input[id="zip"] {
+  border-color: #8134af;
+  width: 50%;
+}
+
+input[id="name"],
+select[id="county"] {
+  border-color: #515bd4;
+}
+
+input[id="mail"] {
+  border-color: #8134af;
+}
+
+input[id="tel"] {
+  border-color: #dd2a7b;
+}
+
+input[id="street"] {
+  border-color: #feda77;
+}
+
+input[id="city"] {
+  border-color: #f58529;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  max-width: 10%;
+  max-height: 10%;
+}
+
+.checkbox-label,
+.radio-label {
+  width: 90%;
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #f58529;
+  border-style: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 25px auto;
+  display: block;
+  width: 90%;
+  padding: 20px 0;
+}
+/* Footer */
+.footer {
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.copyright {
+  color: grey;
+  display: block;
+  font-style: italic;
+  text-align: center;
+}
+
+/* CLEARFIX */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ===MEDIA QUERY=== */
+
+@media screen and (min-width: 768px) {
+  .desktop-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .personal {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+  }
+}

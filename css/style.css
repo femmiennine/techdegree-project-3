@@ -34,6 +34,12 @@ form {
   border: hidden;
 }
 /* ===FLEXBOX STYLE===*/
+.desktop-form {
+  width: 99%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .personal,
 .flexbox {
   display: flex;
@@ -93,9 +99,12 @@ label {
   width: 100%;
 }
 
-input[placeholder] {
+input::placeholder {
+  color: red;
+  font-size: 1em;
   font-style: italic;
-  font-size: 1rem;
+  text-align: right;
+  padding-right: 30px;
 }
 
 input,
@@ -114,6 +123,12 @@ input:focus,
 textarea:focus {
   background-color: #030303;
   color: white;
+  transition: ease-in all 2s;
+}
+
+textarea:valid,
+input:valid {
+  background-color: powderblue;
 }
 
 textarea {
@@ -125,7 +140,6 @@ textarea {
 
 input[id="zip"] {
   border-color: #8134af;
-  width: 50%;
 }
 
 input[id="name"],

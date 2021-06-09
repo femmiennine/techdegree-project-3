@@ -83,3 +83,5 @@ Change the background color for at least ONE of the main sections of the site.
 
 Uses CSS transitions for focus states.
 For example, make a background color fade into view when the user clicks on a text field, and fade out when the user clicks or tabs out of the field.
+ 
+ Final Grade: Eceeds Expectations
